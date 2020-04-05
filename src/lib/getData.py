@@ -18,7 +18,7 @@ class getData():
             Scrapping.objects.create(**data)
             return False, data_set
         else:
-            print timezone.now() - data_set[0].updated
+            print (timezone.now() - data_set[0].updated).total_seconds()
             return False, {}
 
     @property
