@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '8m73u4f=7sv$*ko*3%uum%&8u1+m)dcz^6l85)zsh@z9l6f87l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['api.allaboutcovid.info']
 
 
 # Application definition
