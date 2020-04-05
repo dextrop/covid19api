@@ -23,7 +23,7 @@ class getData():
             else:
                 data_set = ScrapFromWiki().getDataIndia()
                 current = data_obj[0]
-                setattr(current, "data", data_set)
+                setattr(current, "data", json.dumps(data_set))
                 current.save()
     @property
     def get_data(self):
