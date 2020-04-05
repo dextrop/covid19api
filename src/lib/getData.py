@@ -1,5 +1,7 @@
+import json
 from datetime import datetime
 from src.models.scrap_data import Scrapping
+from src.lib.scrap_from_wiki import ScrapFromWiki
 
 class getData():
     def __init__(self):
@@ -8,12 +10,16 @@ class getData():
     def check_last_scrap(self):
         data_set = Scrapping.objects.filter()
         if data_set.count() < 1:
-            return True
+            data = {
+                "data" : json.dumps(ScrapFromWiki().getDataIndia())
+            }
+            Scrapping.objects.create(**data)
+            return False, data
         else:
             print datetime.now() - data_set.updated
-            return False
+            return False, {}
 
     @property
     def get_data(self):
-        self.check_last_scrap()
-        return {}
+        status, data = self.check_last_scrap()
+        return data

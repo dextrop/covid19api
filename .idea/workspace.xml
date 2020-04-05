@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbc5fbe1-7207-422a-a130-9b2771c6634a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/getData.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/scrap_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/covidbackend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/covidbackend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/get_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/get_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/getData.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/getData.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
