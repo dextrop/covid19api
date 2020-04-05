@@ -10,11 +10,12 @@ class getData():
     def check_last_scrap(self):
         data_set = Scrapping.objects.filter()
         if data_set.count() < 1:
+            data_set = ScrapFromWiki().getDataIndia()
             data = {
-                "data" : json.dumps(ScrapFromWiki().getDataIndia())
+                "data" : json.dumps(data_set)
             }
             Scrapping.objects.create(**data)
-            return False, data
+            return False, data_set
         else:
             print datetime.now() - data_set.updated
             return False, {}
