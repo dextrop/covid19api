@@ -3,7 +3,7 @@ from django.db import models
 class Scrapping(models.Model):
     id = models.AutoField(primary_key=True)
     data         = models.CharField(max_length=5000, default="")
-    updated         = models.DateTimeField(auto_now=True)
+    updated      = models.DateTimeField(auto_now=True)
 
 
     def is_authenticated(self):

@@ -17,7 +17,7 @@ class getData():
             Scrapping.objects.create(**data)
             return False, data_set
         else:
-            print datetime.now() - data_set.updated
+            print datetime.now() - data_set[0].updated
             return False, {}
 
     @property
