@@ -2,6 +2,7 @@ import json
 from datetime import datetime
 from src.models.scrap_data import Scrapping
 from src.lib.scrap_from_wiki import ScrapFromWiki
+from django.utils import timezone
 
 class getData():
     def __init__(self):
@@ -17,7 +18,7 @@ class getData():
             Scrapping.objects.create(**data)
             return False, data_set
         else:
-            print datetime.now() - data_set[0].updated
+            print timezone.now() - data_set[0].updated
             return False, {}
 
     @property
