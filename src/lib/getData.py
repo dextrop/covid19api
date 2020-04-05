@@ -22,5 +22,8 @@ class getData():
 
     @property
     def get_data(self):
-        status, data = self.check_last_scrap()
-        return data
+        try:
+            status, data = self.check_last_scrap()
+        except Exception as e:
+            print e
+        return {}
