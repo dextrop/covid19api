@@ -27,8 +27,9 @@ class getData():
                 current.save()
     @property
     def get_data(self):
+        data = {}
         try:
             status, data = self.check_last_scrap()
         except Exception as e:
             print e
-        return {}
+        return data
