@@ -23,6 +23,7 @@ class getData():
             else:
                 data_set = ScrapFromWiki().getDataIndia()
                 current = data_obj[0]
+                print "Data object to be updated", current
                 setattr(current, "data", json.dumps(data_set))
                 current.save()
     @property
