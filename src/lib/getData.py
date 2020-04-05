@@ -9,8 +9,8 @@ class getData():
         print "get Data"
 
     def check_last_scrap(self):
-        data_set = Scrapping.objects.filter()
-        if data_set.count() < 1:
+        data_obj = Scrapping.objects.filter()
+        if data_obj.count() < 1:
             data_set = ScrapFromWiki().getDataIndia()
             data = {
                 "data" : json.dumps(data_set)
@@ -18,9 +18,13 @@ class getData():
             Scrapping.objects.create(**data)
             return False, data_set
         else:
-            print (timezone.now() - data_set[0].updated).total_seconds()
-            return False, {}
-
+            if ((timezone.now() - data_obj[0].updated).total_seconds() < 1800):
+                return False, json.loads(data_obj[0].data)
+            else:
+                data_set = ScrapFromWiki().getDataIndia()
+                current = data_obj[0]
+                setattr(current, "data", data_set)
+                current.save()
     @property
     def get_data(self):
         try:

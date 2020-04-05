@@ -44,10 +44,10 @@ class ScrapFromWiki():
                             pass
 
                     if (len(headings) == 5):
-                        response["active"] = headings[1].text
-                        response["death"] = headings[2].text
-                        response["recovered"] = headings[3].text
-                        response["total"] = headings[4].text
+                        response["active"] = headings[1].text.replace("\n", "")
+                        response["death"] = headings[2].text.replace("\n", "")
+                        response["recovered"] = headings[3].text.replace("\n", "")
+                        response["total"] = headings[4].text.replace("\n", "")
 
         response["state_wise"] = data
         return response
