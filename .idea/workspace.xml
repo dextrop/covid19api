@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbc5fbe1-7207-422a-a130-9b2771c6634a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lib/getData.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/scrap_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/covidbackend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/covidbackend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/covidbackend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/covidbackend/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/get_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/get_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +90,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="634" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586070266227">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="634" y="329" key="#com.intellij.fileTypes.FileTypeChooser/65.24.1855.1056@65.24.1855.1056" timestamp="1586070266227" />
     <state width="1827" height="285" key="GridCell.Tab.0.bottom" timestamp="1586038401516">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
@@ -102,9 +110,9 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state width="1827" height="285" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1586038401514" />
-    <state x="363" y="87" key="SettingsEditor" timestamp="1586066137227">
+    <state x="363" y="87" key="SettingsEditor" timestamp="1586070524451">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="363" y="87" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1586066137227" />
+    <state x="363" y="87" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1586070524451" />
   </component>
 </project>
