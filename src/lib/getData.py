@@ -32,5 +32,5 @@ class getData():
         try:
             status, data = self.check_last_scrap()
         except Exception as e:
-            print e
+            print "Error Scraping Data", e
         return data
